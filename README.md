@@ -15,7 +15,7 @@ AlertDialog.Builder(this)</br>
   .setNegativeButton("No", null)</br>
   .show()</br>
   
-This works fine, buy there is one annoying issue, If user clicks home button while dialog displayed, 
+This works fine, but there is one annoying issue, If user clicks home button while dialog displayed, 
 and go back to the app, the dialog will still be there. Now your user experience is seeing a question about 
 getting out of the app while he just went in.
 To avoid this case, I found an easy solution by making my modal lifecycle aware.
